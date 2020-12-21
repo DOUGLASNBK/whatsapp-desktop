@@ -7,9 +7,9 @@ Web view para execução do WhatsApp Web
 
 ### Execução embiente desenvolvimento
 Para executar deve-se configurar as variáveis de constance, gerando setando url e hash do ID da aplicação
-```go run whatsapp.go```
+```go run main.go```
 
 ### Gerando build
-```env GOOS=linux GOARCH=arm GOARM=5 go build -ldflags "-s -w" whatsapp.go```
+```env GOOS=linux GOARCH=amd64 GOARM=5 go build -ldflags "-s -w" main.go```
 ```apt-get install upx```
-```upx whatsapp```
+```upx main```
